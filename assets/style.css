@@ -1,0 +1,11 @@
+.jumbotron {
+    background-image: url(./images/holidayBanner.jpg);
+    text-align: center;
+    color: #f15c2f;
+}
+
+img {
+    height: 50px;
+    width: 50px;
+}
+

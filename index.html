@@ -1,0 +1,75 @@
+<!Doctype html>
+<html>
+    <head>
+        <title>Train Schedule</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stYlesheet" href="assets/css/reset.css">
+        <link rel="stylesheet" href="assets/style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        
+        
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="container header">
+                <div class="jumbotron">
+                    <div class="row">
+                        <div class="col-12">
+                            <h1><img src="assets/images/logo.png" >Holiday Train Schedule </h1>
+                            <h4>See Below for the Next to Arrive</h4>
+                        </div>  
+                    </div> 
+                </div>
+            </div>
+            <div class="container schedule">
+                <div class="row">
+                    <h5>Current Train Schedule</h5>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Train Name</th>
+                                <th scope="col">Destination</th>
+                                <th scope="col">Frequency (in hours)</th>
+                                <th scope="col">Next Arrival</th>
+                                <th scope="col">Minutes Away</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr id="table-row">
+                                <td id="name">Chestnut Hil East</td>
+                                <td id="dest">Media</td>
+                                <td id="freq">60</td>
+                                <td id="next">11:37</td>
+                                <td id="minAway">20</td>
+                            </tr>
+                            </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class ="container">
+                <div class="row">
+                    <h5>Add Train</h5>
+                </div>
+                <form>
+                    <div class="form-group">
+                        <label for="nameInput">Train Name</label>
+                        <input type="text" class="form-control" id="nameInput" placeholder="Trenton East">
+                    </div>
+                    <div class="form-group">
+                        <label for="destInput">Destination</label>
+                        <input type="text" class="form-control" id="destInput" placeholder="Trenton">
+                    </div>
+                    <div class="form-group">
+                            <label for="firstInput">First Train Time (HH:mm in Military Time)</label>
+                            <input type="date" class="form-control" id="firstInput" placeholder="08:00">
+                        </div>
+                    <div class="form-group">
+                        <label for="RateInput">Frequency (in min)</label>
+                        <input type="number" class="form-control" id="RateInput" placeholder="30">
+                    </div>
+                    <button type="submit" id="submitButton" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
