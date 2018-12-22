@@ -9,3 +9,13 @@ img {
     width: 50px;
 }
 
+.btn {
+    background-color: #f15c2f;
+    border-color: #f15c2f; 
+
+}
+
+.btn:hover {
+    background-color: #0055a0;
+    border-color: #0055a0;
+}
